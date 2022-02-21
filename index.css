@@ -1,0 +1,89 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+}
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: auto;
+    margin-top: 60px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+display: grid;
+grid-template-rows: repeat(2,ifr);
+grid-template-columns: repeat(4,ifr);
+grid-template-areas:
+"one one two three" 
+"four five five three";
+align-content: center;
+gap: 8px;
+height: 70%;
+width: 70%;
+padding: 10%
+}
+
+.first{
+background-color:  hsl(263, 55%, 52%);
+grid-area: one;
+color: azure;
+padding: 8px;
+border-radius: 8px;
+}
+
+.second{
+    background-color: hsl(217, 19%, 35%);
+    grid-area:two;
+    padding:8px;
+    border-radius: 8px;
+}
+
+.third{
+    background-color:hsl(0, 0%, 100%);
+    grid-area:three;
+    padding:8px;
+    border-radius:8px;
+}
+
+.fourth{
+    background-color: white;
+    grid-area:four;
+    padding:8px;
+    border-radius: 8px;
+}
+
+.fifth{
+    background-color:hsl(219, 29%, 14%);
+    color:white;
+    grid-area:five;
+    padding:8px;
+    border-radius: 8px;
+}
+
+.img_1 .img_2 .img_3 .img_4 .img_5{
+display: flex;
+flex-direction: row;
+gap: 8px;
+}
+
+.names_1, .names_2, .names_5{
+color: hsl(0, 27%, 83%);
+opacity: 50%;
+}
+.names_3, .names_4{
+color: black;
+}
+.daniel, .jonathan, .kira, .jeanette, .patrick{
+border-radius: 50px;
+}
+/* .quote_1{
+justify-content:end;
+} */
+
+ .temple{
+margin: 20px;
+ }
